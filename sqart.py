@@ -6,4 +6,11 @@ def sqart(number):
     xnew = xold - (z/(2*xnew))
     z = (xnew*xnew)-number
   return z
-
+def cuberoot(number):
+  Y = 1
+  Z = (Y*Y*Y) - number 
+  x_old = 0
+  while Z !=0 and abs(Z) < 0.0001:
+   Y = x_old - (Z/3*Y*Y)
+    Z = (Y*Y*Y) - number
+    reurn Z
